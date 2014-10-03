@@ -6,10 +6,34 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <link href="assets/bootstrap/css/colorpicker.css" rel="stylesheet">
       <link rel="stylesheet/less" href="assets/bootstrap/less/bootstrap.less">
+    <style>
+      #dragDiv {
+         position: absolute;
+         left: 25px;
+         top: 50px;
+      }
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+      #master {
+      	width: 150px;
+      	padding: 15px;
+      	font-size:12px;
+      }
+
+      #favicon {
+      	float:right;
+      	padding-right:150px;
+      }
+      
+      #canvas {
+         background: #ffffff;
+         cursor: crosshair;
+         margin-left: 10px;
+         margin-top: 10px;
+         -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+         -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+         box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+      }
+    </style>
 </head>
 <body>
  <div class="navbar navbar-fixed-top">
@@ -310,14 +334,6 @@
 					<div class="row-fluid">
 					<div class="span6">
 					</div><!--span6 ends-->
-                     <div class="row-fluid">
-					 <div class="span12">
-					 <hr/>
-						 <div class="download-btn">
-							<a name="downloadTheme" href="#" onClick="return false;" class="btn btn-primary">Buy Now!</a>
-						 </div>
-                     </div><!--/span12-->
-        			 </div><!--/row-fluid -->	
 			</div>
 		</div>
 	</div>
@@ -326,5 +342,72 @@
 	<script src="assets/bootstrap/js/bootstrap-colorpicker.js"></script>
 	<script src="assets/js/app.js"></script>
 	<script src="assets/bootstrap/less-1.3.0-pulled.js"></script>
+	<script src="assets/js/html2canvas.js"></script>
+    <div id="favicon">
+		<div class="span7">
+		<div class="row-fluid"><br />
+		<div class="page-header">
+	    	<h2>Logo/Favicon Designer</h2>
+	    </div>
+	    <canvas id='canvas' width='350' height='300'>
+	         Canvas not supported
+	    </canvas>
+		<div id='master'>
+	       Stroke color: <select id='strokeStyleSelect'>
+	                        <option value='red'>red</option>
+	                        <option value='green'>green</option>
+	                        <option value='blue' selected>blue</option>
+	                        <option value='orange'>orange</option>
+	                        <option value='cornflowerblue'>cornflowerblue</option>
+	                        <option value='goldenrod'>goldenrod</option>
+	                        <option value='navy'>navy</option>
+	                        <option value='purple'>purple</option>
+	                     </select>
+
+	       Fill color: <select id='fillStyleSelect'>
+	                        <option value='rgba(255,0,0,0.5)'>semi-transparent red</option>
+	                        <option value='green'>green</option>
+	                        <option value='rgba(0,0,255,0.5)'>semi-transparent blue</option>
+	                        <option value='orange'>orange</option>
+	                        <option value='rgba(100,140,230,0.5)'>semi-transparent cornflowerblue</option>
+	                        <option value='goldenrod' selected>goldenrod</option>
+	                        <option value='navy'>navy</option>
+	                        <option value='purple'>purple</option>
+	                     </select>
+
+	       Sides: <select id='sidesSelect'>
+	                        <option value=4 select>4</option>
+	                        <option value=6>6</option>
+	                        <option value=8>8</option>
+	                        <option value=10>10</option>
+	                        <option value=12>12</option>
+	                        <option value=20>20</option>
+	                     </select>
+
+	       
+	       Start angle: <select id='startAngleSelect'>
+	                        <option value=0 select>0</option>
+	                        <option value=22.5>22.5</option>
+	                        <option value=45>45</option>
+	                        <option value=67.5>67.5</option>
+	                        <option value=90>90</option>
+	                     </select>
+
+	       Fill <input id='fillCheckbox' type='checkbox' checked/>
+	       <input id='eraseAllButton' type='button' value='Erase all'/>
+	    </div>
+
+	    <div id='dragDiv'>
+	      Edit: <input type='checkbox' id='editCheckbox'/>
+	    </div>
+	    <div class="download-btn">
+			<a name="downloadTheme" href="#" onClick="return false;" class="btn btn-primary">Download Layout</a>
+		</div>
+    </div>
+    </div>
+    </div>
+    <script src = 'assets/js/polygon.js'></script>
+    <script src = 'assets/js/example.js'></script>
+    </script>
   </body>
 </html>
