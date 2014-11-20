@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: Site Title
+title: Twine
 locale: en_US
-description: Describe your website here.
+description: Build Interactive Stories.
 logo: site-logo.png
 search: true
 url: 
