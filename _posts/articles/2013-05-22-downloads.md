@@ -8,60 +8,31 @@ comments: false
 share: true
 ---
 
-Here are some examples of what a post with images might look like. If you want to display two or three images next to each other responsively use `figure` with the appropriate `class`. Each instance of `figure` is auto-numbered and displayed in the caption.
+##Twine Information
 
-## Figures (for images or video)
+The most recent Twine version is <strong>1.4.2</strong>, released 2 Jun 2014. (<a href="http://twinery.org/downloads/twine_1.4.2_win.exe" class="urlextern" title="http://twinery.org/downloads/twine_1.4.2_win.exe" rel="nofollow">Windows</a>, <a href="http://twinery.org/downloads/twine_1.4.2_osx.zip" class="urlextern" title="http://twinery.org/downloads/twine_1.4.2_osx.zip" rel="nofollow">OS X</a>)
 
-### One Up
+<a href="/wiki/twine_1.4.2_release_notes" class="wikilink1" title="twine_1.4.2_release_notes">Twine 1.4.2 release notes</a>
+<a href="/wiki/twine_1.4.2_bugs" class="wikilink1" title="twine_1.4.2_bugs">Twine 1.4.2 bugs</a>
+<a href="/wiki/twine_1.4.1_release_notes" class="wikilink1" title="twine_1.4.1_release_notes">Twine 1.4.1 release notes</a>
+<a href="/wiki/twine_1.4.1_bugs" class="wikilink1" title="twine_1.4.1_bugs">Twine 1.4.1 bugs</a>
+<a href="/wiki/twine_1.4_release_notes" class="wikilink1" title="twine_1.4_release_notes">Twine 1.4 release notes</a>
+<a href="/wiki/twine_1.4_bugs" class="wikilink1" title="twine_1.4_bugs">Twine 1.4 bugs</a>
+<a href="/wiki/versions_of_twine" class="wikilink1" title="versions_of_twine">Versions of Twine</a>
+<a href="/wiki/twine_licenses" class="wikilink1" title="twine_licenses">Twine licenses</a>
+<a href="/wiki/browser_support" class="wikilink1" title="browser_support">Browser support</a>
 
-<figure>
-	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg" alt="image"></a>
-	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
-</figure>
+###Getting Started with Twine
 
-### Two Up
+There are some great tutorials on Twine:
 
-Apply the `half` class like so to display two images side by side that share the same caption.
+<a href="http://www.auntiepixelante.com/twine/" class="urlextern" title="http://www.auntiepixelante.com/twine/" rel="nofollow">Anna Anthropy's How To Make Games With Twine</a> is a great, fast way to get started with Twine.
 
-{% highlight html %}
-<figure class="half">
-	<img src="/images/image-filename-1.jpg" alt="image">
-	<img src="/images/image-filename-2.jpg" alt="image">
-	<figcaption>Caption describing these two images.</figcaption>
-</figure>
-{% endhighlight %}
+<a href="http://aliendovecote.com/twine101" class="urlextern" title="http://aliendovecote.com/twine101" rel="nofollow">Brenda Neotenomie's Twine 101</a> is an online Twine tutorial in slideshow format, perfect for teaching workshops. You can navigate using arrow keys or mouse. Right/left goes from topic to topic, down focuses more deeply into that topic.
 
-And you'll get something that looks like this:
+<a href="http://www.gamasutra.com/blogs/DanCox/20130203/185939/Learning_Twine_Part_1.php" class="urlextern" title="http://www.gamasutra.com/blogs/DanCox/20130203/185939/Learning_Twine_Part_1.php" rel="nofollow">Dan Cox's Learning Twine</a> blog post series is a gentle introduction to Twine as well. (direct link: parts <a href="http://www.gamasutra.com/blogs/DanCox/20130209/186341/Learning_Twine_Part_2.php" class="urlextern" title="http://www.gamasutra.com/blogs/DanCox/20130209/186341/Learning_Twine_Part_2.php" rel="nofollow">2</a> and <a href="http://www.gamasutra.com/blogs/DanCox/20130218/186810/Learning_Twine_Part_3.php" class="urlextern" title="http://www.gamasutra.com/blogs/DanCox/20130218/186810/Learning_Twine_Part_3.php" rel="nofollow">3</a>) 
 
-<figure class="half">
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="image"></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="image"></a>
-	<img src="http://placehold.it/600x300.jpg" alt="image">
-	<img src="http://placehold.it/600x300.jpg" alt="image">
-	<figcaption>Two images.</figcaption>
-</figure>
+The <a href="/wiki/twine_reference" class="wikilink1" title="twine_reference">Twine Reference</a> goes over all of Twine's features in detail.
 
-### Three Up
+<a href="/wiki/tutorial_videos_and_screencasts" class="wikilink1" title="tutorial_videos_and_screencasts">Tutorial Videos and Screencasts</a>
 
-Apply the `third` class like so to display three images side by side that share the same caption.
-
-{% highlight html %}
-<figure class="third">
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="image"></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="image"></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="image"></a>
-	<figcaption>Caption describing these three images.</figcaption>
-</figure>
-{% endhighlight %}
-
-And you'll get something that looks like this:
-
-<figure class="third">
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="image"></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="image"></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="image"></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="image"></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="image"></a>
-	<a href="http://placehold.it/1200x600.jpg"><img src="http://placehold.it/600x300.jpg" alt="image"></a>
-	<figcaption>Three images.</figcaption>
-</figure>
