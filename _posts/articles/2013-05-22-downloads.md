@@ -3,8 +3,8 @@ layout: post
 title: "Downloads"
 excerpt: "Source for all Twine resources."
 categories: articles
-tags: [sample-post, images, test]
-comments: true
+tags: [twine, resources]
+comments: false
 share: true
 ---
 
